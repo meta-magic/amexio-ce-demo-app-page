@@ -1,0 +1,274 @@
+<amexio-viewport [type]="'2'" [scrollable]="true">
+  <!-- image 1 -->
+  <amexio-viewport-content class="view-port-bg-image" [scrollable]="false">
+
+    <amexio-viewport-background>
+      <amexio-image [path]="'assets/images/1.jpg'"></amexio-image>
+    </amexio-viewport-background>
+
+    <amexio-viewport-content-body>
+
+      <amexio-nav [enable-side-nav-position]="true" [enable-more-mode]="true" [title]="'Amexio CE Demo App'"
+        [logo]="'assets/images/amexio-logo.png'">
+
+        <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text"
+          [icon]="menus.icon" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
+        </amexio-nav-item>
+
+
+      </amexio-nav>
+      <br>
+      <amexio-layout-grid style="padding: 0px 10px 0px 10px;" [layout]="'page2'">
+        <amexio-grid-item [name]="'gridpage2title'">
+          <amexio-label size="large-bold" [font-color]="'white'">
+            Creative Viewport Demos
+          </amexio-label>
+        </amexio-grid-item>
+
+        <amexio-grid-item [name]="'gridpage2view1'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(52,37,39,0.7)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Viewort Demo 1
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/demo1.jpg'">
+              </amexio-image>
+              <p>Life is better when you Dance Because Dance is the hidden language of the soul.
+              </p>
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onViewportDemoFirstClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'">
+              </amexio-button>
+            </amexio-action-ce>
+          </amexio-card-ce>
+        </amexio-grid-item>
+
+        <amexio-grid-item [name]="'gridpage2view2'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(52,37,39,0.7)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Viewport Demo 2
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/demo2.jpg'">
+              </amexio-image>
+              <p>
+                Offers A Unique Selection Of Stylish, Contemporary, And Chic Furniture Online. High Quality Furniture.
+
+              </p>
+
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onViewportDemoSecondClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'"> </amexio-button>
+            </amexio-action-ce>
+
+          </amexio-card-ce>
+        </amexio-grid-item>
+
+        <amexio-grid-item [name]="'gridpage2view3'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(52,37,39,0.7)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Viewport Demo 3
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/demo3.jpg'">
+              </amexio-image>
+              <p>
+                By the deep sea, or the jungle, and music in its roar;
+                I love not Man the less, but Nature more.
+              </p>
+
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onViewportDemoThreeClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'"> </amexio-button>
+            </amexio-action-ce>
+
+          </amexio-card-ce>
+        </amexio-grid-item>
+      </amexio-layout-grid>
+
+
+
+    </amexio-viewport-content-body>
+  </amexio-viewport-content>
+
+
+  <!-- image  2 new added -->
+  <amexio-viewport-content [scrollable]="false">
+
+    <amexio-viewport-background>
+      <amexio-image [path]="'assets/images/2.jpg'"></amexio-image>
+    </amexio-viewport-background>
+
+    <amexio-viewport-content-body>
+      <!--  Creative Menu Demo -->
+      <br>
+      <amexio-layout-grid style="padding: 0px 10px 0px 10px;" [layout]="'page3'">
+        <amexio-grid-item [name]="'gridpage3title'">
+          <amexio-label size="large-bold" [font-color]="'white'">
+            Creative Menu Demos
+          </amexio-label>
+        </amexio-grid-item>
+
+        <amexio-grid-item [name]="'gridpage3menu1'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(64,28,6,0.6)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Menu Demo 1
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/menu1.jpg'">
+              </amexio-image>
+              <p>
+                Creative Menu Demo with center alignment and animation effect.
+              </p>
+
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onMenuDemoFirstClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'"> </amexio-button>
+            </amexio-action-ce>
+
+          </amexio-card-ce>
+        </amexio-grid-item>
+
+
+        <amexio-grid-item [name]="'gridpage3menu2'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(64,28,6,0.6)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Menu Demo 2
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/menu2.jpg'">
+              </amexio-image>
+
+              <p>
+                Creative Menu Demo with Right side alignment and animation effect.
+              </p>
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onMenuDemoSecondClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'"> </amexio-button>
+            </amexio-action-ce>
+
+          </amexio-card-ce>
+        </amexio-grid-item>
+
+
+        <amexio-grid-item [name]="'gridpage3menu3'">
+          <amexio-card-ce [align]="'start'" [color]="'white'" [background]="'rgba(64,28,6,0.6)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              align="start">
+              <amexio-label [size]="'medium-bold'">
+                Menu Demo 3
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/viewport/menu3.jpg'">
+              </amexio-image>
+              <p>
+                Creative Menu Demo with left side alignment and animation effect.
+
+              </p>
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onMenuDemoThreeClick()" [type]="'theme-color'"
+                [tooltip]="'Demo'"> </amexio-button>
+            </amexio-action-ce>
+
+          </amexio-card-ce>
+        </amexio-grid-item>
+      </amexio-layout-grid>
+
+
+    </amexio-viewport-content-body>
+  </amexio-viewport-content>
+
+  <!-- image 3 -->
+  <amexio-viewport-content [scrollable]="false">
+
+    <amexio-viewport-background>
+      <amexio-image [path]="'assets/images/3.jpg'"></amexio-image>
+    </amexio-viewport-background>
+
+    <amexio-viewport-content-body>
+      <br>
+
+      <amexio-layout-grid style="padding: 0px 10px 0px 10px;" [layout]="'page4'">
+        <amexio-grid-item [name]="'gridpage4demo1'">
+
+
+          <amexio-card-ce [color]="'white'" [background]="'rgba(19,72,80,0.7)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              [border-bottom]="true" [align]="'start'" [color]="'white'" [background]="'rgba(218,105,114,0.3)'">
+              <amexio-label [size]="'medium-bold'">
+                TechMFlix
+              </amexio-label>
+            </amexio-header-ce>
+
+
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/images/tech.jpg'">
+              </amexio-image>
+              <p>
+                Netflix chronicles the rise of the cocaine trade in Colombia and the gripping real-life stories of drug
+                kingpins of the late 80s in this raw.
+              </p>
+
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onDemoTechMClick()" [type]="'theme-color'" [tooltip]="'BUY'">
+              </amexio-button>
+            </amexio-action-ce>
+          </amexio-card-ce>
+        </amexio-grid-item>
+
+        <amexio-grid-item [name]="'gridpage4demo2'">
+          <amexio-card-ce [color]="'white'" [background]="'rgba(19,72,80,0.7)'">
+            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'random'" [height]="'35px'"
+              [border-bottom]="true" [align]="'start'" [color]="'white'" [background]="'rgba(218,105,114,0.3)'">
+              <amexio-label [size]="'medium-bold'">
+                Virtual Scroller Demo
+              </amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <amexio-image class="homepage-cursor" [path]="'assets/images/virtualDemo.jpg'">
+              </amexio-image>
+              <p>
+                Amexio virtual scroller displays a small subset of records just enough to fill the viewport and uses the
+                same DOM elements as the user scrolls.
+              </p>
+
+            </amexio-body-ce>
+            <amexio-action-ce align="center" [border-top]="true">
+              <amexio-button [label]="'Demo'" (onClick)="onVirtualScrollDemoClick()" [type]="'theme-color'"
+                [tooltip]="'BUY'">
+              </amexio-button>
+            </amexio-action-ce>
+          </amexio-card-ce>
+        </amexio-grid-item>
+      </amexio-layout-grid>
+
+
+
+    </amexio-viewport-content-body>
+
+  </amexio-viewport-content>
+
+</amexio-viewport>
