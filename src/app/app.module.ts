@@ -6,7 +6,6 @@ import { AmexioWidgetModule } from 'amexio-ng-extensions'; // Import Amexio libr
 import { HttpClientModule } from '@angular/common/http';
 import { APP_ROUTE } from 'src/app/app.routes';
 import { ceDemoAppComponent } from './ce-demo-app/ceDemoApp.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuOneComponent } from './creative-menu1/menu1.component';
 import { MenuTwoComponent } from './creative-menu2/menu2.component';
 import { MenuThreeComponent } from './creative-menu3/menu3.component';
@@ -19,7 +18,6 @@ import { ViewportComponent3 } from './viewport3/viewport3.component';
   declarations: [
     AppComponent,
     ceDemoAppComponent,
-    LandingPageComponent,
     MenuOneComponent,
     MenuTwoComponent,
     MenuThreeComponent,
