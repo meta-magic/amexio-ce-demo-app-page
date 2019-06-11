@@ -1,13 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-amexio-viewport-content-body {
-    display: grid;
-     position: relative;
-     justify-content: center;
-      height: 100%;
-     width: 100%; 
-   }
+.inputClass > amexio-text-input .inputgroup .input-control {
+  line-height: 2.8 !important;
+  width: 600px;
+}
+
+.inputClass > amexio-dropdown .inputgroup .input-control {
+  line-height: 2.8 !important;
+  width: 300px;
+}
+
+.rowClass .flex-row{
+  padding-top: 100px;
+}
+
+body{
+  background: black;
+}
+
  
    @media only screen and (max-width: 767px) {
  

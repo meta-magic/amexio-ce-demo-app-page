@@ -4,14 +4,28 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AmexioWidgetModule } from 'amexio-ng-extensions'; // Import Amexio library
 import { HttpClientModule } from '@angular/common/http';
-import { APP_ROUTE } from 'src/app.routes';
+import { APP_ROUTE } from 'src/app/app.routes';
 import { ceDemoAppComponent } from './ce-demo-app/ceDemoApp.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { MenuOneComponent } from './creative-menu1/menu1.component';
+import { MenuTwoComponent } from './creative-menu2/menu2.component';
+import { MenuThreeComponent } from './creative-menu3/menu3.component';
+import { ViewportComponent } from './viewport/viewport.component';
+import { ViewportComponent2 } from './viewport2/viewport2.component';
+import { ViewportComponent3 } from './viewport3/viewport3.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ceDemoAppComponent
+    ceDemoAppComponent,
+    LandingPageComponent,
+    MenuOneComponent,
+    MenuTwoComponent,
+    MenuThreeComponent,
+    ViewportComponent,
+    ViewportComponent2,
+    ViewportComponent3
   ],
   imports: [
     BrowserModule,
