@@ -31,7 +31,7 @@ after_success:
   - codecov
   - mkdir docs/
   - rm -rf docs/*
-  - cp -rf /home/travis/build/meta-magic/amexio-ce-demo-app-page/dist/amexio-ce-demo-app-page/* docs/
+  - cp -rf /home/travis/build/meta-magic/amexio-ce-demo-app-page/dist/amexio-ce-demo-app/* docs/
   - cp -rf CNAME docs/
   - git add docs
   - git commit -m "[skip travis]  date"
