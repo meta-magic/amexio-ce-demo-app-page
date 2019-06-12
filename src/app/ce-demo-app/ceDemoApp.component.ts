@@ -87,7 +87,6 @@ export class ceDemoAppComponent implements OnInit {
         "link": "https://amexio.tech/roadmap"
 
       }
-
     ];
 
     this.amexiotechmenus = [
